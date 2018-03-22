@@ -47,7 +47,7 @@ struct globalStates
 	std::atomic<uint64_t> iConsumeCnt;
 	std::atomic<uint32_t> iGlobalNonce;
 	uint64_t iThreadCount;
-	size_t pool_id = invalid_pool_id;
+	std::atomic<size_t> pool_id;
 
 private:
 	globalStates() : iThreadCount(0)
