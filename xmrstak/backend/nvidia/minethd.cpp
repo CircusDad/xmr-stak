@@ -295,7 +295,7 @@ void minethd::work_main()
 			 */
 			if(globalStates::inst().pool_id.load(std::memory_order_relaxed) != lastPool ||
 				globalStates::inst().iGlobalJobNo.load(std::memory_order_relaxed) == iJobNo)
- 			{	 			{
+ 			{	 			
 				for(size_t i = 0; i < foundCount; i++)
 				{
 
